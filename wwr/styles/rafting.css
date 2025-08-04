@@ -19,6 +19,34 @@ body{
     background-color: var(--primary-color);
 }
 
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+
+.navigation{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    gap: 1rem;
+}
+
+.navigation a{
+    display: block;
+    color: var(--secondary-color);
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.navigation a:hover{
+    color: var(--accent2-color);
+    font-weight: 700;
+}
+
+
 header, main, footer{
     width: 840px;
     margin: 0 auto;
@@ -64,6 +92,22 @@ article{
     width: 250px;
     padding: 10px;
 }
+
+.historyGrid{
+    display: flex;
+}
+
+.history h2{
+    margin-top: 10px;
+}
+
+.history img{
+    width: 100%;
+}
+
+
+
+
 
 nav, p, section{
     margin: 16px;
